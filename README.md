@@ -22,13 +22,13 @@ This app is especially useful for:
 
 **Live Application:**
 
-YOUR_VERCEL_URL
+https://ai-recipe-generator-next-l6i3.vercel.app
 
 ---
 
 # 💻 GitHub Repository
 
-YOUR_GITHUB_REPOSITORY_URL
+https://github.com/aysh8536/ai-recipe-generator-next
 
 ---
 
@@ -194,25 +194,27 @@ GEMINI_API_KEY=YOUR_API_KEY
 
 ---
 
-# 📸 Screenshots
+## 📷 Screenshots
 
-## 🏠 Home Page
+### Home Page
 
-_Add Screenshot Here_
+<img src="home.png" width="900"/>
 
----
+### Recipe Generator
 
-## 📝 Recipe Input Form
+<img src="Generate.png" width="900"/>
 
-_Add Screenshot Here_
+### History
 
----
+<img src="history.png" width="900"/>
 
-## 🤖 Generated Recipe
+### Favorites
 
-_Add Screenshot Here_
+<img src="favourites.png" width="900"/>
 
----
+### About
+
+<img src="about.png" width="900"/>
 
 # 🎯 Real-World Problem Solved
 
