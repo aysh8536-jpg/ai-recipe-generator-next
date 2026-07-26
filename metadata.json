@@ -1,0 +1,6 @@
+{
+  "name": "AI Recipe Generator",
+  "description": "Generate delicious custom recipes from ingredients you already have at home using AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
