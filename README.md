@@ -27,9 +27,6 @@ https://ai-recipe-generator-next-l6i3.vercel.app
 ---
 
 # 💻 GitHub Repository
-
-# 💻 GitHub Repository
-
 https://github.com/aysh8536-jpg/ai-recipe-generator-next
 ---
 
