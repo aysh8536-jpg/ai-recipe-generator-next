@@ -103,20 +103,18 @@ The application sends the following instructions to the AI model:
 # 📂 Project Structure
 
 ```
-ai-recipe-generator/
-│
+ai-recipe-generator-next/
 ├── app/
-│   ├── api/
-│   ├── components/
-│   ├── page.tsx
-│
-├── public/
-├── styles/
+├── components/
 ├── lib/
+├── screenshoot/
+├── .env.example
+├── .gitignore
 ├── package.json
-├── tsconfig.json
+├── package-lock.json
 ├── next.config.ts
 ├── tailwind.config.ts
+├── tsconfig.json
 └── README.md
 ```
 
@@ -127,13 +125,13 @@ ai-recipe-generator/
 Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/aysh8536-jpg/ai-recipe-generator-next.git
 ```
 
 Move into the project
 
 ```bash
-cd ai-recipe-generator
+cd ai-recipe-generator-next
 ```
 
 Install dependencies
