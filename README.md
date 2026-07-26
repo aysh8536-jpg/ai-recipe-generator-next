@@ -1,123 +1,271 @@
-# AI Recipe Generator (Next.js 15 App Router)
+# 🍳 AI Recipe Generator
 
-A modern, production-ready AI Recipe Generator web application built with **Next.js 15 (App Router)**, **React 19**, **TypeScript**, **Tailwind CSS**, **shadcn/ui**, and **Google Gemini AI**.
+An AI-powered web application that helps users create delicious recipes using the ingredients they already have at home.
 
-It converts whatever ingredients you have in your kitchen into delicious, easy-to-follow, step-by-step recipes in seconds with nutrition breakdowns and customizable portion sizes.
+## 📖 Project Overview
 
----
+AI Recipe Generator is designed to solve a common daily problem: **"What should I cook with the ingredients I already have?"**
 
-## Features
+Instead of searching multiple websites or wasting food, users simply enter the ingredients they have, choose their preferred cuisine, dietary preference, and cooking time. The application uses **Google Gemini AI** to instantly generate a complete recipe with cooking instructions and nutrition information.
 
-- 🥘 **Ingredient-Based AI Chef**: Enter ingredients or pick common staples to generate custom recipes.
-- 🌍 **Multi-Cuisine & Dietary Filters**: Supports Pakistani, Indian, Chinese, Italian, American, Mexican, and Chef's Choice with Vegetarian, Vegan, Halal, Non-Veg, or Gluten-Free preferences.
-- ⏱️ **Cooking Steps & Portions**: Step-by-step interactive checkboxes, prep/cook times, and adjustable servings.
-- 📊 **Nutrition Calculator**: Estimated calories, protein, carbs, and fat per serving.
-- 📋 **Copy & Download**: One-click recipe copying and `.txt` file downloading for offline cooking.
-- 💾 **Local Archives & Favorites**: Save recipes to your browser history and bookmark favorites.
-- 🌙 **Dark/Light Mode**: Full theme toggle with persistent state.
-- 🔒 **Secure Next.js Server-Side API**: Google Gemini API key is kept completely hidden on the server (`/api/generate`).
-- ⚡ **100% Vercel Compatible**: Zero custom servers, Express, or PHP required.
+This app is especially useful for:
+
+- 👩‍🎓 Students
+- 🏠 Hostel Residents
+- 👨‍👩‍👧 Families
+- 👩‍💼 Busy Professionals
+- 🍽️ Home Cooks
 
 ---
 
-## Technologies Used
+# 🌍 Live Demo
 
-- **Framework**: Next.js 15 (App Router)
-- **Library**: React 19
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS, shadcn/ui components
-- **AI SDK**: Google GenAI (`@google/genai`) using model `gemini-3.6-flash`
-- **Icons**: Lucide React Icons
+**Live Application:**
+
+YOUR_VERCEL_URL
 
 ---
 
-## Project Structure
+# 💻 GitHub Repository
+
+YOUR_GITHUB_REPOSITORY_URL
+
+---
+
+# 🚀 Features
+
+- 🤖 AI-powered recipe generation
+- 🥗 Enter available ingredients
+- 🌎 Select preferred cuisine
+- 🥦 Choose dietary preference
+- ⏱️ Select cooking time
+- 📋 Detailed ingredients list
+- 👨‍🍳 Step-by-step cooking instructions
+- 🥗 Nutrition information
+- 📱 Fully responsive design
+- ⚡ Fast performance using Next.js
+- 🌐 Live deployment on Vercel
+
+---
+
+# 🧠 AI Feature
+
+The application uses **Google Gemini AI** to generate personalized recipes based on the user's input.
+
+### User Inputs
+
+- Available Ingredients
+- Cuisine Preference
+- Dietary Preference
+- Cooking Time
+
+### AI Output
+
+- Recipe Name
+- Ingredients List
+- Cooking Instructions
+- Preparation Tips
+- Estimated Nutrition Information
+
+---
+
+# 📝 AI System Prompt
+
+The application sends the following instructions to the AI model:
+
+> You are a professional chef and nutrition assistant. Generate a detailed recipe based on the provided ingredients, cuisine preference, dietary preference, and cooking time. Include a creative recipe title, a complete ingredients list, step-by-step cooking instructions, useful cooking tips, and estimated nutritional information. Ensure the recipe is practical, easy to follow, and uses only the provided ingredients whenever possible.
+
+---
+
+# 🛠️ Technologies Used
+
+## Frontend
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+
+## AI
+
+- Google Gemini API
+
+## Deployment
+
+- Vercel
+
+## Version Control
+
+- GitHub
+
+---
+
+# 📂 Project Structure
 
 ```
+ai-recipe-generator/
+│
 ├── app/
-│   ├── layout.tsx             # Root layout with ClientAppShell wrapper
-│   ├── page.tsx               # Hero & Landing Page
-│   ├── globals.css            # Global CSS & Tailwind imports
-│   ├── generator/
-│   │   └── page.tsx           # AI Recipe Generator Studio
-│   ├── history/
-│   │   └── page.tsx           # Recipe History Archives
-│   ├── favorites/
-│   │   └── page.tsx           # Bookmarked Favorites
-│   ├── about/
-│   │   └── page.tsx           # About App & Mission
-│   └── api/
-│       └── generate/
-│           └── route.ts       # Server-side Gemini API Route
-├── components/
-│   ├── Navbar.tsx             # Responsive Navigation Bar
-│   ├── Footer.tsx             # Footer
-│   ├── RecipeCard.tsx         # Printable Recipe Display Card
-│   ├── PresetSelector.tsx     # Preset Recipe Inspiration Cards
-│   └── ui/                    # Reusable shadcn/ui components (button, card, badge)
+│   ├── api/
+│   ├── components/
+│   ├── page.tsx
+│
+├── public/
+├── styles/
 ├── lib/
-│   ├── utils.ts               # Tailwind merge helper
-│   ├── types.ts               # Shared TypeScript interfaces
-│   └── presets.ts             # Recipe presets & staple tags
-├── next.config.ts             # Next.js configuration
-├── tailwind.config.ts         # Tailwind CSS configuration
-├── postcss.config.js          # PostCSS configuration
-├── tsconfig.json              # TypeScript configuration
-├── eslint.config.js           # ESLint configuration
-└── package.json               # Package dependencies and scripts
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+├── tailwind.config.ts
+└── README.md
 ```
 
 ---
 
-## Environment Variables
+# ⚙️ Installation
 
-Create a `.env.local` file in the root directory (or set environment variables in Vercel):
+Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Move into the project
+
+```bash
+cd ai-recipe-generator
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env.local` file
 
 ```env
-GEMINI_API_KEY=your_google_gemini_api_key_here
+GEMINI_API_KEY=YOUR_API_KEY
 ```
 
-> **Security Note**: Never prefix `GEMINI_API_KEY` with `NEXT_PUBLIC_`. The API key is strictly accessed on the server inside `app/api/generate/route.ts`.
+Run the development server
+
+```bash
+npm run dev
+```
+
+Open
+
+```
+http://localhost:3000
+```
 
 ---
 
-## Local Development
+# 🏗️ Build for Production
 
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+```bash
+npm run build
+```
 
-2. **Start Dev Server**:
-   ```bash
-   npm run dev
-   ```
-   Open `http://localhost:3000` in your browser.
+Start production server
 
-3. **Build & Test Production Bundle**:
-   ```bash
-   npm run build
-   npm start
-   ```
+```bash
+npm run start
+```
 
 ---
 
-## Vercel Deployment
+# 🌐 Deployment
 
-1. Push or import your repository into [Vercel](https://vercel.com).
-2. Add the environment variable:
-   - **Key**: `GEMINI_API_KEY`
-   - **Value**: `[Your Gemini API Key]`
-3. Click **Deploy**. Vercel will automatically run:
-   ```bash
-   npm install
-   npm run build
-   ```
-   and launch your application on Edge/Serverless functions.
+The application is deployed using **Vercel**.
+
+Deployment Steps:
+
+1. Push project to GitHub.
+2. Import repository into Vercel.
+3. Add the environment variable:
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+4. Deploy.
 
 ---
 
-## Troubleshooting
+# 📸 Screenshots
 
-- **"GEMINI_API_KEY environment variable is missing"**: Verify that `GEMINI_API_KEY` is added to `.env.local` locally or under Environment Variables in Vercel settings.
-- **Port Conflicts**: Next.js defaults to port `3000`. If port 3000 is occupied, you can specify `-p 3001` or let Next dev select an open port.
+## 🏠 Home Page
+
+_Add Screenshot Here_
+
+---
+
+## 📝 Recipe Input Form
+
+_Add Screenshot Here_
+
+---
+
+## 🤖 Generated Recipe
+
+_Add Screenshot Here_
+
+---
+
+# 🎯 Real-World Problem Solved
+
+Many people struggle to decide what to cook using the ingredients already available at home. They often spend unnecessary time searching online or end up wasting food.
+
+This application helps users quickly generate personalized recipes, reducing food waste, saving time, and making meal planning easier.
+
+---
+
+# 🔒 Environment Variables
+
+Create a `.env.local` file:
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+**Important:** Never upload API keys to GitHub.
+
+---
+
+# 📈 Future Improvements
+
+- Save favourite recipes
+- User authentication
+- Recipe history
+- Image generation for recipes
+- Shopping list generator
+- Voice input
+- Recipe sharing
+- Multi-language support
+
+---
+
+# 👩‍💻 Author
+
+**Ayesha Jamil**
+
+BS Computer Science Student
+
+---
+
+# 📄 License
+
+This project is developed for educational purposes as a Final Project.
+
+---
+
+# ⭐ Acknowledgements
+
+- Google Gemini AI
+- Next.js
+- React
+- Tailwind CSS
+- Vercel
+- GitHub
