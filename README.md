@@ -194,28 +194,29 @@ GEMINI_API_KEY=YOUR_API_KEY
 
 ---
 
-## 📷 Screenshots
+## 📸 Screenshots
 
-### Home Page
+### 🏠 Home Page
 
-<img src="home.png" width="900"/>
+![Home Page](https://raw.githubusercontent.com/aysh8536-jpg/ai-recipe-generator-next/main/screenshot/home.png)
 
-### Recipe Generator
+### 🍳 Recipe Generator
 
-<img src="Generate.png" width="900"/>
+![Recipe Generator](https://raw.githubusercontent.com/aysh8536-jpg/ai-recipe-generator-next/main/screenshot/Generate.png)
 
-### History
+### 📜 History
 
-<img src="history.png" width="900"/>
+![History](https://raw.githubusercontent.com/aysh8536-jpg/ai-recipe-generator-next/main/screenshot/history.png)
 
-### Favorites
+### ❤️ Favorites
 
-<img src="favourites.png" width="900"/>
+![Favorites](https://raw.githubusercontent.com/aysh8536-jpg/ai-recipe-generator-next/main/screenshot/favourites.png)
 
-### About
+### ℹ️ About
 
-<img src="about.png" width="900"/>
+![About](https://raw.githubusercontent.com/aysh8536-jpg/ai-recipe-generator-next/main/screenshot/about.png)
 
+![About](./screenshot/about.png)
 # 🎯 Real-World Problem Solved
 
 Many people struggle to decide what to cook using the ingredients already available at home. They often spend unnecessary time searching online or end up wasting food.
